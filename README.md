@@ -1,5 +1,16 @@
 # React + TypeScript + Vite
 
+## TODO:
+  - Greet user depending on client time of day
+  - Lola website icon
+  - Добавить эти языки:
+    --Русский
+    --Английский
+    --Литовский
+    --Китайский (Мандарин)
+    --Hindu
+    --Японский
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

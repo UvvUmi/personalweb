@@ -1,11 +1,11 @@
 import './App.css'
-import PersonalHome from "./components/Personal";
+import Landing from "./views/Landing";
 
 function App() {
 
   return (
     <>
-      <PersonalHome/>
+      <Landing/>
     </>
   )
 }

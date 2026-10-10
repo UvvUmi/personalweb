@@ -1,0 +1,176 @@
+{
+  "en-US": {
+    "current_language": "English",
+    "full_name": "Daniilas Komogorcevas",
+    "role": "Full-stack developer",
+    "profile_photo": "Profile photo",
+    "greeting": "Hello and welcome!",
+    "tagline": "I am a full-stack developer. Here is a little about me.",
+    "main_navigation": "Main navigation",
+    "language_selector": "Choose language",
+    "profile_links": "Profile links",
+    "github_profile": "GitHub profile",
+    "linkedin_profile": "LinkedIn profile",
+    "switch_to_light": "Switch to light theme",
+    "switch_to_dark": "Switch to dark theme",
+    "developer_information": "Developer information",
+    "choose_category": "Choose an information category",
+    "json_information_format": "{category} information in JSON format",
+    "categories": {
+      "profile": "Profile",
+      "stack": "Stack",
+      "experience": "Experience",
+      "projects": "Projects",
+      "languages": "Languages"
+    },
+    "info": {
+      "profile": {
+        "full_name": "Daniilas Komogorcevas",
+        "location": "Lithuania",
+        "education": {
+          "alma_mater": "Šiauliai University of Applied Sciences",
+          "degree": "Professional Bachelor of Computing",
+          "study_field": "Software Engineering"
+        }
+      },
+      "stack": {
+        "ui": "React",
+        "back_end": "ASP.NET Core",
+        "database": "SQL",
+        "languages": "TypeScript, C#",
+        "mobile": "React Native"
+      },
+      "experience": {
+        "full_time": "IT Specialist",
+        "internship": "Telia Lietuva",
+        "freelance": "Web development"
+      },
+      "projects": {
+        "SLA_monitoring": "Network node SLA monitoring",
+        "AGAVE": "Chromium OSINT extension",
+        "RaskileApp": "Mobile application for local business"
+      },
+      "languages": {
+        "Lithuanian": "Native",
+        "Russian": "Native",
+        "English": "C1"
+      }
+    }
+  },
+  "ru-RU": {
+    "current_language": "Русский",
+    "full_name": "Даниил Комогорцев",
+    "role": "Full-stack разработчик",
+    "profile_photo": "Фотография профиля",
+    "greeting": "Привет! Добро пожаловать!",
+    "tagline": "Я full-stack разработчик. Вот немного обо мне.",
+    "main_navigation": "Главная навигация",
+    "language_selector": "Выбрать язык",
+    "profile_links": "Ссылки на профили",
+    "github_profile": "Профиль GitHub",
+    "linkedin_profile": "Профиль LinkedIn",
+    "switch_to_light": "Переключить на светлую тему",
+    "switch_to_dark": "Переключить на тёмную тему",
+    "developer_information": "Информация о разработчике",
+    "choose_category": "Выберите категорию информации",
+    "json_information_format": "Данные «{category}» в формате JSON",
+    "categories": {
+      "profile": "Профиль",
+      "stack": "Технологии",
+      "experience": "Опыт",
+      "projects": "Проекты",
+      "languages": "Языки"
+    },
+    "info": {
+      "profile": {
+        "full_name": "Даниил Комогорцев",
+        "location": "Литва",
+        "education": {
+          "alma_mater": "Šiauliai University of Applied Sciences",
+          "degree": "Профессиональный бакалавр в области вычислительной техники",
+          "study_field": "Программная инженерия"
+        }
+      },
+      "stack": {
+        "ui": "React",
+        "back_end": "ASP.NET Core",
+        "database": "SQL",
+        "languages": "TypeScript, C#",
+        "mobile": "React Native"
+      },
+      "experience": {
+        "full_time": "ИТ-специалист",
+        "internship": "Стажировка в Telia Lietuva",
+        "freelance": "Веб-разработка"
+      },
+      "projects": {
+        "SLA_monitoring": "Мониторинг SLA сетевых узлов",
+        "AGAVE": "OSINT-расширение для Chromium",
+        "RaskileApp": "Мобильное приложение для местного бизнеса"
+      },
+      "languages": {
+        "Lithuanian": "Родной",
+        "Russian": "Родной",
+        "English": "C1"
+      }
+    }
+  },
+  "lt-LT": {
+    "current_language": "Lietuvių",
+    "full_name": "Daniilas Komogorcevas",
+    "role": "Visapusiškas programuotojas",
+    "profile_photo": "Profilio nuotrauka",
+    "greeting": "Sveiki atvykę!",
+    "tagline": "Esu visapusiškas programuotojas. Štai šiek tiek apie mane.",
+    "main_navigation": "Pagrindinė navigacija",
+    "language_selector": "Pasirinkite kalbą",
+    "profile_links": "Profilio nuorodos",
+    "github_profile": "GitHub profilis",
+    "linkedin_profile": "LinkedIn profilis",
+    "switch_to_light": "Perjungti į šviesią temą",
+    "switch_to_dark": "Perjungti į tamsią temą",
+    "developer_information": "Informacija apie programuotoją",
+    "choose_category": "Pasirinkite informacijos kategoriją",
+    "json_information_format": "{category} duomenys JSON formatu",
+    "categories": {
+      "profile": "Profilis",
+      "stack": "Technologijos",
+      "experience": "Patirtis",
+      "projects": "Projektai",
+      "languages": "Kalbos"
+    },
+    "info": {
+      "profile": {
+        "full_name": "Daniilas Komogorcevas",
+        "location": "Lietuva",
+        "education": {
+          "alma_mater": "Šiaulių valstybinė kolegija",
+          "degree": "Profesinis kompiuterijos bakalauras",
+          "study_field": "Programinės įrangos inžinerija"
+        }
+      },
+      "stack": {
+        "ui": "React",
+        "back_end": "ASP.NET Core",
+        "database": "SQL",
+        "languages": "TypeScript, C#",
+        "mobile": "React Native"
+      },
+      "experience": {
+        "full_time": "IT specialistas",
+        "internship": "Praktika įmonėje Telia Lietuva",
+        "freelance": "Žiniatinklio kūrimas"
+      },
+      "projects": {
+        "SLA_monitoring": "Tinklo mazgų SLA stebėjimas",
+        "AGAVE": "Chromium OSINT plėtinys",
+        "RaskileApp": "Mobilioji programėlė vietos verslui"
+      },
+      "languages": {
+        "Lithuanian": "Gimtoji",
+        "Russian": "Gimtoji",
+        "English": "C1"
+      }
+    }
+  }
+}
