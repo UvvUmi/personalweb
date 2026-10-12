@@ -127,18 +127,7 @@ const styles = `
   white-space: nowrap;
 }
 .pw .logo-symbol {
-  display: grid;
-  width: 36px;
-  height: 36px;
-  flex: none;
-  place-items: center;
-  border: 1px solid color-mix(in srgb, #ff704d 35%, var(--border));
-  border-radius: 11px;
-  color: #d95736;
-  background: color-mix(in srgb, #ff704d 8%, var(--surface));
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: -0.06em;
+  width: 25px;
 }
 .pw .logo-copy {
   display: grid;
@@ -449,9 +438,8 @@ const styles = `
     gap: 6px;
   }
   .pw .logo-symbol {
-    width: 32px;
-    height: 32px;
-    border-radius: 11px;
+    width: 16px;
+    height: 16px;
   }
   .pw .logo-name {
     max-width: calc(100vw - 220px);
@@ -577,12 +565,14 @@ function MoonIcon() {
 }
 
 export default function Landing() {
-  const [isDark, setIsDark] = useState(true);
-  const [locale, setLocale] = useState<Locale>("en-US");
+  const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "light" ? false : true);
+  const [locale, setLocale] = useState<Locale>(localStorage.getItem("language") as Locale ?? "en-US");
   const [activeCategory, setActiveCategory] = useState<InfoCategory>("profile");
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   const languageTriggerRef = useRef<HTMLButtonElement>(null);
   const copy = translations[locale];
+
+  document.title = copy.full_name;
 
   return (
     <div className={`pw${isDark ? " dark" : ""}`} lang={locale}>
@@ -591,7 +581,7 @@ export default function Landing() {
 
       <nav className="site-nav" aria-label={copy.main_navigation}>
         <a className="logo" href="/" aria-label={`${copy.full_name} home`}>
-          <span className="logo-symbol" aria-hidden="true">DK</span>
+          <img className="logo-symbol" src="favicon.ico" />
           <span className="logo-copy">
             <span className="logo-name">{copy.full_name}</span>
             <span className="logo-role">{copy.role}</span>
@@ -605,6 +595,7 @@ export default function Landing() {
             <li><a href="https://react.dev">React</a></li>
             <li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/">C#</a></li>
             <li><a href="https://dotnet.microsoft.com/en-us/apps/aspnet">ASP.NET Core</a></li>
+            <li><a href="https://npmjs.com">NPM</a></li>
           </ul>
 
           <span className="nav-divider" aria-hidden="true" />
@@ -651,6 +642,7 @@ export default function Landing() {
                     aria-pressed={locale === language}
                     onClick={() => {
                       setLocale(language);
+                      localStorage.setItem("language", language);
                       setIsLanguageMenuOpen(false);
                     }}
                   >
@@ -671,7 +663,11 @@ export default function Landing() {
             <button
               className="theme-toggle"
               type="button"
-              onClick={() => setIsDark((current) => !current)}
+              onClick={() => {
+                setIsDark((current) => {
+                  localStorage.setItem("theme", !current  === true ? "dark" : "light")
+                  return !current;
+              }); }}
               aria-label={isDark ? copy.switch_to_light : copy.switch_to_dark}
               aria-pressed={isDark}
               title={isDark ? copy.switch_to_light : copy.switch_to_dark}
@@ -685,7 +681,7 @@ export default function Landing() {
       <main className="hero">
         <img
           className="avatar"
-          src="https://mockmind-api.uifaces.co/content/human/92.jpg"
+          src="/lolka.png"
           alt={copy.profile_photo}
           width="184"
           height="184"
